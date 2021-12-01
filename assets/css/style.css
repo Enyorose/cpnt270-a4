@@ -17,4 +17,6 @@ figure {
 h1 {
   font-size: xx-large;
   max-width: 25ch;
+  margin: auto;
+  text-align: center;
 }
