@@ -3,12 +3,13 @@ const init = async () => {
   const response = await fetch('/.netlify/functions/signs')
   const data = await response.json()
 
-  // document.querySelector('.container').innerHTML = `
-  // <figure>
-  //   <img src="${data.url}" alt="Photo from instagram"
-  //   <figcaption>${data.caption}</figcaption>
-  // </figure>
-  // `
-  console.log(data)
+  const neon = data.find((item) => item.caption.includes('#signsofneon'))
+
+  document.querySelector('.container').innerHTML = `
+  <figure>
+    <img src="${neon.url}" alt="Photo from instagram"
+    <figcaption>${neon.caption}</figcaption>
+  </figure>
+  `
 }
 init()
