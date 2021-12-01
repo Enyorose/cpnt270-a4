@@ -5,7 +5,7 @@ const init = async () => {
 
   document.querySelector('.container').innerHTML = `
   <figure>
-    <img src="${data.url}" alt="Photo from instagram"
+    <img src="${data.data.url}" alt="Photo from instagram"
     <figcaption>${data.caption}</figcaption>
   </figure>
   `
