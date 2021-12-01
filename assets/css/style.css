@@ -9,5 +9,5 @@
   max-width: 75ch;
 }
 img {
-width: max-content;
+max-width: min-content;
 }
