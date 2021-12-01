@@ -16,7 +16,7 @@ figure {
   background-color: #f6f4f2;
   border: 1px solid;
   padding: 10px;
-  box-shadow: 5px 10px inset;
+  box-shadow: 5px 10px #888888
 }
 h1 {
   font-size: xx-large;
